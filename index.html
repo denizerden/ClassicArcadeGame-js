@@ -56,7 +56,7 @@ window.onload = function() {
 	setInterval(function(){
 	moveEverything();
     drawEverything();
-	}, 5000/framesPerSecond);
+	}, 1000/framesPerSecond);
 	
 	canvas.addEventListener('mousedown', handleMouseClick)
 	
@@ -197,14 +197,7 @@ function drawBall(centerX,centerY,radius,drawColor){
 
 }
 
-function drawImg(centerX,centerY){
-var img = new Image();
-img.src = 'nazli2.jpeg';
-img.width = 50;
-img.height = 50;
-canvasContext.drawImage(img, ballX, ballY,50,50);
-canvasContext.fill();
-}
+
 </script>
 
 
